@@ -1,0 +1,4 @@
+com/sjc/plugin/MyPlugin2.java
+ com.sjc.plugin.MyPlugin2
+com/sjc/plugin/MyExt.java
+ com.sjc.plugin.MyExt

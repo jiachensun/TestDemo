@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // google annotation processor
+    // 自定义的annotation
+    implementation project(':apt-annotation')
+    // 注解处理器
+    implementation 'com.google.auto.service:auto-service:1.0-rc3'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc3'
+    // JavaPoet
+    implementation 'com.squareup:javapoet:1.11.1'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}

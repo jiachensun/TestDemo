@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.teachingdemo.view.SplashVideoView
+        android:id="@+id/vv_splash_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tv_count_down"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_gravity="end"
+        android:padding="@dimen/dp_5"
+        android:background="@drawable/shape_splash_count_down_tv"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

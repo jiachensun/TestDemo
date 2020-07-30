@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TeachingDemo</string>
+
+    <!--  splash activity  -->
+    <string name="string_android_resouce">android.resource://</string>
+    <string name="string_skip">跳过</string>
+    <string name="string_second_logo">%ds</string>
+    <string name="string_activity_description_splash">闪屏页</string>
+    <string name="string_activity_description_main">首页</string>
+    <string name="string_compute">计算</string>
+    <string name="string_compute_error">错误计算</string>
+    <string name="string_compute_by_broadcast">广播计算</string>
+    <string name="string_connect_service">连接服务</string>
+    <string name="string_ram_leak">内存泄露</string>
+    <string name="string_average_by_aidl">计算AIDL</string>
+    <string name="string_upload">提交</string>
+</resources>
