@@ -6,7 +6,6 @@ import android.util.Log;
 
 import androidx.multidex.MultiDex;
 
-import com.alibaba.android.arouter.launcher.ARouter;
 import com.example.teachingdemo.hotfix.HotFixUtil;
 import com.sjc.arouter_lib.IArouter;
 
@@ -14,7 +13,6 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,9 +50,6 @@ public class MyApplication extends Application {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        // 阿里arouter
-        ARouter.init(this);
     }
 
     public static MyApplication getMyApplication() {

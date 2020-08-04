@@ -1,6 +1,5 @@
+include ':nativeandjni'
 include ':myviewpager'
-include ':myrefresh'
-include ':myrefreshlayout'
 include ':apt-processor'
 include ':apt-annotation'
 include ':guild'

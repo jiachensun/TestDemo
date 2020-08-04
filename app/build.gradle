@@ -46,6 +46,7 @@ dependencies {
 
     // ARouter
     implementation project(path: ':arouter_lib')
+    implementation 'com.google.android.material:material:1.1.0'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
@@ -78,9 +79,13 @@ dependencies {
     // Aspactj
     implementation 'org.aspectj:aspectjrt:1.9.2'
 
-    // ARouter
-    implementation 'com.alibaba:arouter-api:1.3.1'
-    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+    // 阿里ARouter
+//    implementation 'com.alibaba:arouter-api:1.3.1'
+//    annotationProcessor 'com.alibaba:arouter-compiler:1.1.4'
+
+    // jetpack room数据库访问
+    implementation "androidx.room:room-runtime:2.2.5"
+    annotationProcessor "androidx.room:room-compiler:2.2.5"
 }
 
 /*Aspectj配置*/

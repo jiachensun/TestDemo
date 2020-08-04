@@ -12,13 +12,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".myaop.TestAopActivity">
+        <activity android:name=".room.JetPackRoomActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".myaop.TestAopActivity"/>
         <activity android:name=".eventbus.MyEventBus3Activity" />
         <activity android:name=".livedata.LiveData2Activity" />
         <activity android:name=".livedata.LiveData1Activity" />
@@ -35,11 +36,13 @@
         <activity
             android:name=".activity.MainActivity"
             android:description="@string/string_activity_description_main">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
     </application>
 
