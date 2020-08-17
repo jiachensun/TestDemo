@@ -69,4 +69,30 @@ public class SplashActivity extends BaseActivity {
         startActivity(intent);
         finish();
     }
+
+    class MyThreaddd extends Thread {
+
+        @Override
+        public void run() {
+            super.run();
+
+            // 让出CPU的占用权
+            yield();
+
+            // 使线程休眠，不会释放锁
+            try {
+                sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            // 是线程休眠，会释放锁，让其他线程执行。可通过notify唤醒
+            try {
+                wait();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+        }
+    }
 }
