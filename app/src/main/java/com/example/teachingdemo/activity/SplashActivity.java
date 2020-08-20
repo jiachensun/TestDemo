@@ -12,6 +12,7 @@ import com.example.teachingdemo.R;
 import com.example.teachingdemo.annotation.AptActivityLayout;
 
 import java.io.File;
+import java.util.concurrent.Callable;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -68,6 +69,19 @@ public class SplashActivity extends BaseActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
+
+        Callable callable = new Callable() {
+            @Override
+            public Object call() throws Exception {
+                return null;
+            }
+        };
+
+        try {
+            callable.call();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     class MyThreaddd extends Thread {
